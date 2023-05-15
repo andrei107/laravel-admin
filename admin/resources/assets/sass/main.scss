@@ -1,0 +1,89 @@
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+html, body, p, span, a,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ccc;
+}
+
+.table-block{
+    width:95%;
+    margin: 10px auto;
+}
+
+.small-ceil {
+    width: 5%;
+}
+
+.medium-ceil {
+    width: 20%;
+}
+
+
+//receipts
+.container-receipt{
+    width:100%;
+    padding: 10px;
+    .heading {
+        color:#d40050;
+        font-size: 32px !important;
+        font-weight: bold;
+    }
+    .table-receipt{
+        width: 100%;
+        padding: 5px;
+        .tableHeader{
+            background: #aeabd0 !important;
+            border-collapse: collapse;
+            th {
+                padding: 5px;
+                color: #fff !important;
+                font-size: 16px !important;
+                text-align: center;
+                border: 2px solid #000;
+            }
+        }
+        td {
+            border: 2px solid #5f6189;
+            text-align: center;
+            vertical-align: middle !important;
+            font-size: 14px !important;
+        }
+    }
+}
+
+
+//popups
+.alert-wrapper{
+    display: none;
+    position: fixed;
+    width: 300px;
+    min-height: 200px;
+    height: auto;
+    left: 20px;
+    top: 20px;
+    z-index: 1051;
+    .alert{
+      display: none;
+      width: 100%;
+      height: auto;
+      margin-bottom: 9px;
+      padding: 20px;
+      color: #fff;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07);
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .alert--success{
+      background-color: rgba(22, 187, 127, 0.95);
+    }
+    .alert--error {
+      background-color: #e03f6a;
+    }
+  }

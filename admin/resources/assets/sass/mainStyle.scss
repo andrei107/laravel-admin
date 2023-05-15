@@ -1,0 +1,242 @@
+@import "node_modules/font-awesome/scss/font-awesome.scss";
+html, body, p, span, a,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #ccc;
+}
+
+.table-block{
+    width: 100%;
+    margin: 10px auto;
+}
+
+.small-ceil {
+    width: 5%;
+}
+
+.medium-ceil {
+    width: 20%;
+}
+
+.big-ceil {
+    width: 40%;
+}
+
+//receipts
+.container-receipt{
+    width:100%;
+    padding: 10px;
+    .heading {
+        color: #5f6189;
+        font-size: 32px !important;
+    }
+    .table {
+        width: 100%;
+        border: none;
+        margin-bottom: 20px;
+        thead {
+            th {
+                font-weight: bold;
+                text-align: left;
+                border: none;
+                padding: 10px 15px;
+                background: #aeabd0;
+                font-size: 16px;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+        tbody {
+            td {
+                text-align: left;
+                border-left: 1px solid #ddd;
+                border-right: 1px solid #ddd;
+                padding: 10px 15px;
+                font-size: 16px;
+                vertical-align: top;
+                text-align: center;
+                vertical-align: middle;
+                i {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .table thead tr th:first-child,
+    .table tbody tr td:first-child {
+        border-left: none;
+    }
+    .table thead tr th:last-child, .table tbody tr td:last-child {
+        border-right: none;
+    }
+    .table tbody tr:nth-child(even){
+        background: #f3f3f3;
+    }
+}
+
+//receipt-modals
+.modal-content {
+    width: 650px !important;
+    margin: 0 auto !important;
+    .name-modal,
+    .name-modalTypes,
+    .name-modalValues{
+        color: #5f6189;
+        padding: 10px;
+    }
+    h4{
+        padding-left: 10px;
+    }
+    .number-data-modal{
+        div {
+            width: 20%;
+        }
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #e03f6a;
+    }
+    .check-box-block-modal {
+        padding: 10px;
+        border-bottom: 2px solid #e03f6a;
+        .check-box-part {
+            width: 100%;
+            display: flex;
+            div{
+               label {
+                margin-top: 4px;
+               }
+                display: flex;
+                padding-right: 20px;
+                align-items: center;
+                label{
+                    padding-right: 20px;
+                }
+            }
+        }
+
+    }
+
+    .img-block-modal {
+        padding: 10px;
+        border-bottom: 2px solid #e03f6a;
+    }
+    .select-block-modal{
+        padding: 10px;
+        width: 50%;
+        border-bottom: 2px solid #e03f6a;
+    }
+    .main-modal-info {
+        h4 {
+            padding-left: 0;
+        }
+        .tab-content{
+            margin-top:10px;
+        }
+        margin-top: 10px;
+        padding: 10px;
+        textarea {
+            width: 100% !important;
+        }
+    }
+
+}
+
+//popups
+.alert-wrapper{
+    display: none;
+    position: fixed;
+    width: 300px;
+    min-height: 200px;
+    height: auto;
+    left: 20px;
+    top: 20px;
+    z-index: 1051;
+    .alert{
+      display: none;
+      width: 100%;
+      height: auto;
+      margin-bottom: 9px;
+      padding: 20px;
+      color: #fff;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07);
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .alert--success{
+      background-color: rgba(22, 187, 127, 0.95);
+    }
+    .alert--error {
+      background-color: #e03f6a;
+    }
+  }
+
+input[type="checkbox"]{
+    transform:scale(1.4);
+    opacity: 0.8;
+    color:#e03f6a;
+
+}
+
+//menu
+.main-info{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    .main-info-item {
+        padding: 15px;
+        width: 28%;
+        height: 150px;
+        h3{
+            font-size: 38px;
+            font-weight: bold;
+            margin: 0 0 10px 0;
+            white-space: nowrap;
+            padding: 0;
+            color:#fff;
+        }
+        p {
+            font-size: 28px;
+            color:#fff;
+        }
+    }
+    .receipt-num {
+        background: #00c0ef;
+    }
+    .menu-num {
+        background: #dd4b39;
+    }
+    .advice-num {
+        background: #f39c12;
+    }
+}
+
+//create-filter
+.filterWrapper {
+    width:100%;
+    display: flex;
+}
+
+.filterFinal {
+    width: 100%;
+}
+
+.filter-types {
+    width: 40%;
+}
+.filter-values {
+    width: 50%;
+    margin: 0 auto;
+    background: #e8e8e8;
+}
